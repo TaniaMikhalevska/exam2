@@ -1,0 +1,54 @@
+.header {
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: $white;
+    text-align: center;
+    & a {
+        color: $white;
+    }
+    &__nav {
+        margin: 46px 0 220px;
+        display: flex;
+        justify-content: space-between;
+        &-items {
+            display: flex;
+            flex-direction: row;
+        }
+        &-link {
+            padding: 7px 22px;
+            margin: 0 1px;
+            border: 1px solid transparent;
+            border-radius: 16.5px;
+            &:hover {
+               border-color: $white; 
+            }
+            &--active {
+                border-color: $white;
+            }
+        }
+        
+    }
+    &__title {
+        font: 300 35px $main-font;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+    &__description {
+        margin-bottom: 186px;
+        letter-spacing: 0.5px;
+    }
+    &__slider {
+        @include size(36px,36px);
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%;
+        background: $green;
+        line-height: 40px;
+        margin-bottom: 77px;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}

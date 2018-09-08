@@ -1,0 +1,44 @@
+.portfolio {
+    text-align: center;
+    background: #f3f3f3;
+    .section__title {
+        margin: 86px 0 36px;
+    }
+    .section__description {
+        margin-bottom: 86px;
+    }
+    &__tabs {
+        padding-bottom: 102px;
+    }
+    .tabs {
+        &__items {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 75px;
+    }
+        &__link {
+            color: #464646;
+            position: relative;
+            
+            &--active::after {
+                background: $green;
+                @include pos($b: -12px, $l: calc(50% - 19px));
+                @include size(38px, 2px);
+                content: "";
+            }
+                &:hover {
+                    @extend .tabs__link--active;
+                    }
+        }
+    }
+}
+
+.grid-sizer {
+    width: 22%;
+    padding: 0 4px;
+}
+#all {
+    display: flex;
+    flex-direction: row; 
+    
+}

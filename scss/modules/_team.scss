@@ -1,0 +1,54 @@
+.team {
+    color: #81868e;
+    text-align: center;
+     padding-bottom: 100px;
+    .section__title {
+        margin: 80px 0 36px;
+    }
+    .section__description {
+        margin-bottom: 60px;
+    }
+    &__slider {
+        width: 86%;
+    }
+    .slider {
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        }
+        &__text {
+            padding-top: 28px;
+            width: 40%;
+            text-align: right;
+            margin-right: 46px;
+            position: relative;
+            
+            &::after {
+                @include size(3px,42px);
+                @include pos($r:-46px, $t:28px);
+                content: "";
+                background: $green;
+            }
+        }
+        &__hero {
+            color: #464646;
+            letter-spacing: .4px;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+        &__profession {
+             color: #81868e;
+             font: 400 14px/25px $main-font;
+             letter-spacing: 1px;
+             margin-bottom: 28px;
+             text-transform: uppercase;
+        }
+        &__info {
+            @extend .section__description;
+        }
+        &__img {
+            align-self: flex-start;
+        }
+    }
+    
+}

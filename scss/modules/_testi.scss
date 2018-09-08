@@ -1,0 +1,45 @@
+.testi {
+    background: #f3f3f3;
+    text-align: center;
+    padding-bottom: 103px;
+    .section__title {
+        margin: 64px 0 36px;
+    }
+    .section__description {
+        margin-bottom: 60px;
+    }
+    &__slider {
+        background: $white;
+        padding: 53px 0 58px;
+    }
+    .slider {
+        &__item {
+            display: flex;
+            justify-content: space-between; 
+            padding: 0 100px;
+        }
+        &__text--testi {
+            text-align: left;
+            width: 76%;
+        }
+        &__info--testi {
+            color: #81868e;
+            font: 400 16px/28px $main-font;
+            margin-bottom: 30px;
+        }
+        &__author--testi {
+            font-weight: 700;
+            color: $green;
+            text-transform: uppercase;
+        }
+        &__profession--testi {
+            font-size: 14px;
+            color: #464646;
+            text-transform: uppercase;
+            margin: 8px 0 45px;
+        }
+        &__img {
+            align-self: flex-start;
+        }
+    }
+}
